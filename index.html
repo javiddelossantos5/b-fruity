@@ -14,22 +14,29 @@
     <title>B-Fruity</title>
   </head>
   <body>
-    <!-- Nav Start -->
-    <nav class="nav">
-      <a class="nav-logo" href="#"
-        ><img src="./images/BFruity.webp" alt="logo"
-      /></a>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">About</a>
-        <a href="#">Menus</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
+   <!-- Navbar Start -->
+  <nav class="navbar">
+    <div class="brand-title">
+      <a href="./index.html"><img src="./images/BFruity.webp" alt="company logo"></a>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="./contactus.html">Menus</a></li>
+        <li><a href="./contactus.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
 
-    <!-- Nav End -->
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
     <!-- Hero Image Start -->
     <section class="hero">
@@ -41,7 +48,7 @@
 
     <!-- Our Products Start -->
 
-    <section class="products">
+    <section class="products" id="products">
       <h1>OUR PRODUCTS</h1>
       <p>What's In Store</p>
 
@@ -74,7 +81,7 @@
 
     <!-- About Start -->
 
-    <section class="about">
+    <section class="about" id="about">
       <img src="./images/about.webp" alt="juice cup" />
       <div class="about-text">
         <h1>ABOUT</h1>
@@ -113,7 +120,7 @@
 
     <!-- Contact Form Start -->
 
-    <div class="background">
+    <section class="background" id="contact">
       <div class="container">
         <div class="screen">
           <div class="screen-header">
@@ -161,17 +168,34 @@
           </div>
         </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Contact Form End -->
 
     <!-- Google Start -->
 
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=941%20W%20hwy%2040%20Suite%20E,%20Vernal,%20Utah%2084078%20&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><a href="https://www.embedgooglemap.net"></a><style></div></div>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=941%20W%20hwy%2040%20Suite%20E,%20Vernal,%20Utah%2084078%20&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><a href="https://www.embedgooglemap.net"></a></div></div>
     <!-- Google End -->
 
-    
+    <!-- Start Footer -->
+
+  <footer id="footer">
+    <div class="footer-content">
+      <h3>B-Fruity</h3>
+       <p><a href="#">941 W hwy 40 Suite E, Vernal, Utah 84078 </a></p>
+      <ul class="socials">
+        <li><a href="tel:435-299-7122"><i class="fas fa-phone-square-alt"></i></a></li>
+        <li><a href="mailto:albriden.allisonfoundation@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+        <li><a href="https://www.instagram.com/the_allison_foundation/"><i class="fab fa-instagram-square"></i></a></li>
+     </ul>
+    </div>
+
+   </div>
+  </footer>
+
+  <!-- End Footer -->
+
 
     <script src="./app.js"></script>
   </body>

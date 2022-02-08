@@ -5,30 +5,118 @@
   font-family: sans-serif;
 }
 
-/* Nav Start */
+html {
+  scroll-behavior: smooth;
+}
 
-.nav {
+/* Navbar Responsive */
+
+.navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-logo img {
-  height: 125px;
-  width: auto;
-  margin-left: 50px;
-  padding: 5px 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  padding-right: 20px;
+  background-color: white;
   color: black;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.brand-title img {
+  height: 90px;
+  margin-left: 20px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.navbar-links li {
+  list-style: none;
+  padding: 10px;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
   font-family: sans-serif;
   font-weight: 100;
 }
 
-/* Nav End */
+.navbar-links li a:hover {
+  color: rgba(0, 0, 0, 0.507);
+}
+
+/* .navbar-links li:hover {
+  background-color: #555;
+  border: 1px solid black;
+  border-radius: 8px;
+} */
+
+.toggle-button {
+  position: absolute;
+  top: 2.75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* NavBar Responsive End */
 
 /* Hero Start */
 
@@ -436,7 +524,7 @@ body, button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ea1d6f;
+  color: rgba(91, 181, 204, 0.644);
   font-size: 26px;
 }
 
@@ -448,7 +536,7 @@ body, button, input {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: #ea1d6f;
+  background: rgba(91, 181, 204, 0.685);
 }
 
 .app-contact {
@@ -494,14 +582,14 @@ body, button, input {
 .app-form-button {
   background: none;
   border: none;
-  color: #ea1d6f;
+  color: rgba(91, 181, 204, 0.698);
   font-size: 14px;
   cursor: pointer;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  color: rgba(91, 181, 204, 0.582);
 }
 
 .credits {
@@ -571,4 +659,106 @@ body, button, input {
 }
 
 /* Google End */
+
+/* Footer Responsive Start */
+
+footer {
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: black;
+  background-color: rgb(248, 247, 247);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: black;
+}
+
+.footer-content p a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+  border: 1.1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: white;
+  background-color: black;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+/* Footer Responsive End */
 
