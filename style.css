@@ -183,7 +183,7 @@ html {
 
   .hero a {
     left: 20px;
-    top: 220px;
+    top: 230px;
   }
 
   .hero {
@@ -337,6 +337,8 @@ html {
   font-weight: 100;
   font-size: 15px;
   margin-bottom: 200px;
+  transition: all 0.5s ease;
+
 }
 
 .about-btn:hover {
@@ -798,3 +800,38 @@ footer {
 }
 
 /* Footer Responsive End */
+
+
+/* Sticky Phone Start */
+
+.sticky a {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 912px) {
+
+  .sticky a {
+    visibility: visible;
+    position: fixed;
+    font-size: 25px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background: rgba(91, 181, 204, 0.685);
+    color: black;
+    transition: all 0.5s ease;
+  
+  }
+  
+  .sticky a:hover {
+    background: rgba(91, 181, 204, 0.274);
+    color: rgba(0, 0, 0, 0.452);
+  
+  }
+
+}
+
+
+/* Sticky Phone End */
