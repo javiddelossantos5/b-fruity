@@ -833,5 +833,138 @@ footer {
 
 }
 
-
 /* Sticky Phone End */
+
+
+/* Second Page Menu Start */
+
+/* Menu Header Start */
+
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  margin: 30px 0;
+}
+
+.menu-header a {
+  font-size: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-header a:hover {
+  color: gray;
+}
+
+.menu-header
+.menu-header-gray {
+  color: gray;
+  text-align: center;
+}
+
+.menu-header
+.menu-header-gray:hover {
+  color: black;
+}
+
+.menu-header p {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* Menu Header End */
+
+/* Menu Header Text Start */
+
+.menu-text {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+/* Menu Header Text End */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu img {
+  object-fit: cover;
+  width: 60%;
+  height: 35vh;
+  margin: 40px auto;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.menu-header {
+  margin: 30px 0;
+  font-size: 25px;
+  color: rgba(65,24,135,1);
+}
+
+.menu-subheader {
+  font-size: 18px;
+  color: rgba(145,204,208,1);
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 50%;
+  flex: 1;
+  margin: 40px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-options {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+
+  .menu-container {
+    margin: 50px 0;
+  }
+
+}
+
+.menu-container h4 {
+  font-size: 20px;
+  color: rgba(65,24,135,1);
+  font-weight: 100;
+}
+
+.menu-container p {
+  color: rgba(145,204,208,1);
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+}
+
+
+/* Second Page Menu End */
