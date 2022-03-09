@@ -940,6 +940,14 @@ footer {
   margin: 40px auto;
 }
 
+.menu-container h4 {
+  margin-bottom: 10px;
+}
+
+.menu-container p {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 600px) {
   .menu-options {
     width: 70%;
@@ -949,6 +957,10 @@ footer {
 
   .menu-container {
     margin: 50px 0;
+  }
+
+  .menu-header a {
+    font-size: 25px;
   }
 
 }
